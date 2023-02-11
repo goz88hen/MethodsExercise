@@ -36,8 +36,8 @@
             int num2 = int.Parse(Console.ReadLine());
 
             int sum = Sum(num1, num2);
-             Console.WriteLine($"The Sum is : {sum}");
-            
+            Console.WriteLine($"The Sum is : {sum}");
+
             Console.WriteLine("Give me a number to multiply");
             int num3 = int.Parse(Console.ReadLine());
 
@@ -80,9 +80,30 @@
         {
             return num6 - num7 - num8;
 
+            //----------Challenge---------
+
+
+            int sum = Sum(2, 4);
+            Console.WriteLine($"The Sum is : {sum}");
+
+
+            static int Sum(params int[] list)
+            {
+                int sum = 0;
+                for (int i = 0; i < list.Length; i++)
+                {
+                    sum = sum + list[i];
+                }
+                return sum;
+                    }
         }
     }
 }
+
+
+            
+    
+
 
 
     
